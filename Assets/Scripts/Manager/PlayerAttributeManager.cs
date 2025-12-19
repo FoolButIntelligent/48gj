@@ -12,7 +12,7 @@ namespace Manager
     {
         [Header("初始属性设置")]
         [SerializeField] private float initialHealth = 70f;
-        [SerializeField] private float initialMood = 0f;
+        [SerializeField] private float initialMood = 50f;
         [SerializeField] private float initialHunger = 40f;
 
         private Dictionary<AttributeType, AttributeBase> attributes;
