@@ -50,7 +50,7 @@ namespace Manager
         {
             if (attributeManager == null)
             {
-                attributeManager = FindObjectOfType<PlayerAttributeManager>();
+                attributeManager = FindFirstObjectByType<PlayerAttributeManager>();
             }
 
             StartNewDay();
