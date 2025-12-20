@@ -15,7 +15,7 @@
 
         [Header("结算与结局")]
         public AudioSource musicSource;   // 用于播放结局长音效或背景音乐
-        public AudioClip settleMusic;
+        public AudioClip settleMusic;//场景音乐
         public AudioClip settleTransition; // 对应：过渡音
         public AudioClip ending1;         // 养生砖家：平稳
         public AudioClip ending2;         // 大卫戴：作死音色
