@@ -15,7 +15,7 @@ namespace Core
 
         [Header("任务逻辑")]
         public string missionGoal;     // 任务目标描述：健康值变化 >= 5
-        public List<StatModifier> missonGoalData;// 对应的数值：5 (方便代码做逻辑判断)
+        public List<StatModifier> missionGoalData;// 对应的数值：5 (方便代码做逻辑判断)
 
         [Header("奖励与后果")]
         public List<StatModifier> rewards;      // 成功后的奖励列表

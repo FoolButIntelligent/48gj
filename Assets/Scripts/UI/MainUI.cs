@@ -16,17 +16,6 @@ namespace UI
         public HUDController valueHud;
         //public FoodHUD foodHud;
     }
-
-    /// <summary>
-    /// 食物的二级菜单
-    /// </summary>
-    public class FoodUI : MonoBehaviour
-    {
-        public TextMeshProUGUI mainFood;
-        public TextMeshProUGUI sideFood;
-        public TextMeshProUGUI drink;
-        public Button confirmButton;
-    }
     
     /// <summary>
     /// 暂停界面

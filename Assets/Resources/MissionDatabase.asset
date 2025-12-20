@@ -19,7 +19,7 @@ MonoBehaviour:
     storyText: "\u7AD9\u5728\u955C\u5B50\u524D\uFF0Ckaturia\u7EC8\u4E8E\u60F3\u8D77\u4E86\u5E74\u521D\u7684\u51CF\u80A5\u8BA1\u5212.."
     trendText: "\u4E0D\u5F53\u5927\u536B\u6234\u4E86\uFF0C\u6211\u8981\u63A7\u5236\u70ED\u91CF!"
     missionGoal: "\u5065\u5EB7\u503C\u53D8\u5316>=5"
-    missonGoalData:
+    missionGoalData:
     - type: 1
       value: 5
     rewards:
@@ -36,7 +36,7 @@ MonoBehaviour:
     storyText: "\u591A\u4E8B\u4E4B\u79CB\uFF0Ckaturia\u7684\u8010\u5FC3\u903C\u8FD1\u6781\u9650\uFF01\u6B27\u5185\u8BE5\uFF0C\u518D\u6CA1\u6709\u653E\u7EB5\u9910\u7684\u8BDD..."
     trendText: "\u51CF\u91CC\u5417\uFF01\u4ECA\u5929\u6211\u5C31\u662F\u826F\u5B50"
     missionGoal: "\u5FC3\u60C5\u503C\u53D8\u5316>=5"
-    missonGoalData:
+    missionGoalData:
     - type: 1
       value: 5
     rewards:
@@ -51,7 +51,7 @@ MonoBehaviour:
     storyText: "\u7D2F\u7D2F\u7D2F\u7D2F\u7D2F\uFF01\u7231\u4F60\u8001\u51E0\uFF01\u80FD\u91CF\u51E0\u8FD1\u69A8\u5E72\uFF0C\u5DF2\u7ECF\u4E0D\u662F\u5355\u7EAF\u5F53\u826F\u5B50\u80FD\u89E3\u51B3\u4E86"
     trendText: "\u826F\u5B50\uFF1F\u6211\u4E00\u53E3\u6C14\u540310\u4E2A\u826F\u5B50"
     missionGoal: "\u5FC3\u60C5\u53D8\u5316>=15"
-    missonGoalData:
+    missionGoalData:
     - type: 1
       value: 15
     rewards:

@@ -1,54 +1,74 @@
 using UnityEngine;
-using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
+using UnityEditor;
 using Core;
 
-public class ExcelImporter
+public class CSVImporter
 {
     [MenuItem("Tools/Import Food Data")]
     public static void ImportCSV()
     {
-        string path = "Assets/Data/FoodData.csv"; // 你的 CSV 路径
-        string[] lines = File.ReadAllLines(path);
-        
-        // 加载或创建 ScriptableObject
+        // 设置 CSV 文件的路径
+        string path = "Assets/Data/FoodData.csv";  // CSV 文件路径
+        string[] lines = File.ReadAllLines(path);  // 读取所有行
+
+        // 获取 CSV 文件所在的目录
+        string directoryPath = Path.GetDirectoryName(path);
+
+        // 创建 FoodDatabase 实例（这是一个 ScriptableObject）
         FoodDatabase db = AssetDatabase.LoadAssetAtPath<FoodDatabase>("Assets/Resources/FoodDatabase.asset");
+
+        // 如果没有现成的 FoodDatabase，则创建一个新的实例
         if (db == null)
         {
             db = ScriptableObject.CreateInstance<FoodDatabase>();
             AssetDatabase.CreateAsset(db, "Assets/Resources/FoodDatabase.asset");
         }
-        db.foodList.Clear();
 
-        // 从第二行开始遍历 (跳过表头)
-        for (int i = 1; i < lines.Length; i++)
+        db.foodList.Clear();  // 清空原有数据
+
+        // 解析每一行 CSV 数据
+        for (int i = 1; i < lines.Length; i++)  // 从第二行开始，跳过标题行
         {
-            string[] columns = lines[i].Split(',');
-            FoodData data = new FoodData();
-            data.foodName = columns[0];
-            data.effects = ParseEffects(columns[1]); // 解析复杂字段
-            db.foodList.Add(data);
+            string[] columns = lines[i].Split(',');  // 按逗号分割每列
+
+            FoodData foodData = new FoodData();
+            foodData.foodName = columns[0];  // 第一列是食物名称
+
+            // 第二列是属性（例如 Hunger:28;Health:6），解析每个属性
+            foodData.effects = ParseAttributes(columns[1]);
+
+            db.foodList.Add(foodData);
         }
 
+        // 保存修改后的 FoodDatabase.asset
         EditorUtility.SetDirty(db);
         AssetDatabase.SaveAssets();
-        Debug.Log("Food数据导入完成！");
+
+        Debug.Log("Food data imported to FoodDatabase.asset at " + "Assets/Resources/FoodDatabase.asset");
     }
 
-    // 解析 Hunger:28;Health:6 这种格式的字符串
-    private static List<StatModifier> ParseEffects(string raw)
+    // 解析属性字段（例如 Hunger:28;Health:6;Mood:4）
+    private static List<StatModifier> ParseAttributes(string raw)
     {
         List<StatModifier> list = new List<StatModifier>();
-        string[] parts = raw.Split(';');
-        foreach (var p in parts)
+
+        // 使用分号分隔每个属性
+        string[] effects = raw.Split(';');  
+        foreach (var effect in effects)
         {
-            string[] kv = p.Split(':');
-            StatModifier mod = new StatModifier();
-            mod.type = (StatType)System.Enum.Parse(typeof(StatType), kv[0]);
-            mod.value = float.Parse(kv[1]);
-            list.Add(mod);
+            string[] kv = effect.Split(':');  // 使用冒号分隔属性名和数值
+            if (kv.Length == 2)  // 确保是有效的键值对
+            {
+                StatModifier mod = new StatModifier();
+                mod.type = (StatType)System.Enum.Parse(typeof(StatType), kv[0]);  // 解析属性类型（例如 Hunger、Health）
+                mod.value = float.Parse(kv[1]);  // 解析属性值
+                list.Add(mod);
+            }
         }
+
         return list;
     }
 }
+
