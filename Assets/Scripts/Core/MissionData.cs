@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
-using System;
 using System.Collections.Generic;
+using Core;
 
 namespace Core
 {
-    [Serializable]
-    public class DailyStatusData 
+    [System.Serializable]
+    public class MissionData
     {
         [Header("文本信息")]
         public string id;              // 唯一ID，如 "WeightLoss_001"
@@ -16,10 +16,16 @@ namespace Core
 
         [Header("任务逻辑")]
         public string missionGoal;     // 任务目标描述：健康值变化 >= 5
-        public float targetValue;      // 对应的数值：5 (方便代码做逻辑判断)
+        public List<StatModifier> missonGoalData;// 对应的数值：5 (方便代码做逻辑判断)
 
         [Header("奖励与后果")]
         public List<StatModifier> rewards;      // 成功后的奖励列表
         public List<StatModifier> penalties;    // 失败后的后果列表
+    }
+    
+    [CreateAssetMenu(fileName = "MissionDatabase", menuName = "Data/MissionDatabase")]
+    public class MissionDatabase : ScriptableObject 
+    {
+        public List<MissionData> missions = new List<MissionData>();
     }
 }

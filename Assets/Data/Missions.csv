@@ -1,0 +1,2 @@
+﻿id,title,subtitle,storytext,trendtext,missiongoal,targetvalue,rewards,penalties
+1,减肥,我不是大卫戴,站在镜子前，katuria终于想起了年初的减肥计划......,不当大卫戴了，我要控制热量!,健康值变化>=5,Mood:5,Health:3;Mood:6,Mood:6

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Manager
 {
-    public class StateManager : EntityBase
+    public class StateManager 
     {
         //单例
         public static StateManager Instance;

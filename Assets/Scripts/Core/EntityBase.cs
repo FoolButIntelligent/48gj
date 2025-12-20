@@ -3,8 +3,6 @@ using UnityEngine;
 
 namespace Core
 {
-    public class EntityBase : MonoBehaviour
-    {
         [Serializable]
         public class StatModifier
         {
@@ -18,5 +16,4 @@ namespace Core
             Mood,       // 心情
             Hunger       // 饥饿
         }
-    }
 }

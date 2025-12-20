@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: FoodDatabase
+  m_EditorClassIdentifier: Assembly-CSharp:Core:FoodDatabase
+  foodList:
+  - foodName: "\u756A\u8304\u9E21\u86CB\u9762"
+    effects:
+    - type: 2
+      value: 28
+    - type: 0
+      value: 6
+    - type: 1
+      value: 4
+  - foodName: "\u6C34\u679C\u635E"
+    effects:
+    - type: 2
+      value: 12
+    - type: 0
+      value: 8
+    - type: 1
+      value: 6
+  - foodName: "\u6C99\u53BF\u9E21\u817F\u996D"
+    effects:
+    - type: 2
+      value: 30
+    - type: 0
+      value: 7
+    - type: 1
+      value: 5
+  - foodName: "\u86CB\u7092\u996D"
+    effects:
+    - type: 2
+      value: 34
+    - type: 0
+      value: 6
+    - type: 1
+      value: 4
+  - foodName: "\u852C\u83DC\u6C99\u62C9"
+    effects:
+    - type: 2
+      value: 20
+    - type: 0
+      value: 15
+    - type: 1
+      value: 3
+  - foodName: "\u756A\u8304\u725B\u8111"
+    effects:
+    - type: 2
+      value: 30
+    - type: 0
+      value: 9
+    - type: 1
+      value: 5
+  - foodName: "\u70B8\u9E21"
+    effects:
+    - type: 2
+      value: 32
+    - type: 0
+      value: -10
+    - type: 1
+      value: 12
+  - foodName: "\u62AB\u8428"
+    effects:
+    - type: 2
+      value: 26
+    - type: 0
+      value: -8
+    - type: 1
+      value: 10
+  - foodName: "\u6C49\u5821"
+    effects:
+    - type: 2
+      value: 28
+    - type: 0
+      value: -10
+    - type: 1
+      value: 9
+  - foodName: "\u70E4\u4E32"
+    effects:
+    - type: 2
+      value: 38
+    - type: 0
+      value: -18
+    - type: 1
+      value: 14
+  - foodName: "\u5BFF\u53F8"
+    effects:
+    - type: 2
+      value: 25
+    - type: 0
+      value: -12
+    - type: 1
+      value: 13
+  - foodName: "\u8C46\u6D46"
+    effects:
+    - type: 2
+      value: 10
+    - type: 0
+      value: 6
+    - type: 1
+      value: 4
+  - foodName: "\u5496\u5561"
+    effects:
+    - type: 2
+      value: 4
+    - type: 0
+      value: -2
+    - type: 1
+      value: 6
+  - foodName: "\u5976\u8336"
+    effects:
+    - type: 2
+      value: 10
+    - type: 0
+      value: -12
+    - type: 1
+      value: 15
+  - foodName: "\u53EF\u4E50"
+    effects:
+    - type: 2
+      value: 6
+    - type: 0
+      value: -10
+    - type: 1
+      value: 10
+  - foodName: "\u9178\u5976"
+    effects:
+    - type: 2
+      value: 15
+    - type: 0
+      value: 10
+    - type: 1
+      value: 6
+  - foodName: "\u767D\u5F00\u6C34"
+    effects:
+    - type: 2
+      value: 6
+    - type: 0
+      value: 0
+    - type: 1
+      value: 5
