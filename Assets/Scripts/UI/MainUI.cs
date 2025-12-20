@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using Manager;
+using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
@@ -15,23 +17,24 @@ namespace UI
 
         public HUDController valueHud;
         //public FoodHUD foodHud;
-    }
+        private void Start()
+        {
+            missonCard.onClick.AddListener(() => AudioManager.Instance.PlayBGM(AudioManager.Instance.startMenu));
+            
+        }
     
     /// <summary>
     /// 暂停界面
     /// </summary>
-    public class PulseUI: MonoBehaviour
-    {
-        public Button pulseButton;
-    }
+    
+        public Button resumeButton;
     
     /// <summary>
     /// 结算界面
     /// </summary>
-    public class SettlementUI : MonoBehaviour
-    {
-        public TextMeshProUGUI titleText;
-        public Image characterImage;
-        public TextMeshProUGUI contentText;
+    
+        public Text titleText;
+        //public Image characterImage;
+        public Text contentText;
     }
 }

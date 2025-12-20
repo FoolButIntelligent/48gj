@@ -5,54 +5,112 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb45d3b9-c1b0-438e-ba93-ad10d70e0fc8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.48gj/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MissionDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MissionDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameMainMenu.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameMainMenu.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Startgameinterface.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Startgameinterface.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/FoodDataList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/FoodDataList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/MissionData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/MissionData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/DataImportor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/DataImportor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ExcelImportor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ExcelImportor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ExcelImportor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ExcelImportor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameSceneManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameSceneManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameLoopManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.48gj/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.48gj/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameLoopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Scenes/URP2DSceneTemplate.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Scenes/URP2DSceneTemplate.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ClusterInputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ClusterInputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/MemorySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/MemorySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/MultiplayerManager.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NetworkManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NetworkManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.dedicated-server/MultiplayerRolesSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/baikaishui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/baikaishui.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/danchaofan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/danchaofan.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/doujiang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/doujiang.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/fanqieniunan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/fanqieniunan.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/hanbao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/hanbao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/jituifan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/jituifan.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/kafei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/kafei.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/kaochuan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/kaochuan.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/kele.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/kele.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/mian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/mian.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/naicha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/naicha.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/pisa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/pisa.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/shucaishala-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/shucaishala-1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/shucaishala.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/shucaishala.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/suannai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/suannai.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/zhajitui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/zhajitui.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/zhashutiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Food/zhashutiao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Backgruand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Backgruand.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Confirm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Confirm.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Full_not_hungry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Full_not_hungry.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Happyending.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Happyending.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Health.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Health.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Menu.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Mood.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Mood.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Normalending.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Normalending.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Peaceful.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Peaceful.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Pre_start_screen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Pre_start_screen1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Pre_start_screen2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Pre_start_screen2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Sadending.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Sadending.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Setting.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Smile.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2/Charactor.spine" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2/Charactor.spine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2/Spine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2/Spine/Chanractor.atlas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2/Spine/Chanractor.atlas.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2/Spine/Chanractor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2/Spine/Chanractor.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2/Spine/Chanractor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/vers2/Spine/Chanractor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/xiangsuren.atlas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/xiangsuren.atlas.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/xiangsuren.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/xiangsuren.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/xiangsuren.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Spine/xiangsuren.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Submenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Submenu.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Taskbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Taskbar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Unsmile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/Unsmile.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/beifen3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/beifen3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/mainmenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/images/Uidemo/mainmenu.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,29 +120,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="377HfYT3CsFSOfSaEeVZ8ZKF12X" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\2022.3.62f3\Editor\Unity.exe" />

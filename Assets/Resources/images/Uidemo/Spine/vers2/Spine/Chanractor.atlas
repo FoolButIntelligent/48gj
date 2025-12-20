@@ -1,0 +1,27 @@
+
+Chanractor.png
+size: 692,718
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biyan
+  rotate: false
+  xy: 2, 668
+  size: 329, 48
+  orig: 331, 50
+  offset: 1, 1
+  index: -1
+eyes
+  rotate: false
+  xy: 333, 604
+  size: 328, 112
+  orig: 338, 114
+  offset: 1, 1
+  index: -1
+图层 1
+  rotate: true
+  xy: 2, 2
+  size: 600, 688
+  orig: 602, 690
+  offset: 1, 1
+  index: -1
