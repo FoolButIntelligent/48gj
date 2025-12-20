@@ -39,6 +39,8 @@ namespace Manager
                 CheckTenSecEffects();
                 tenSecTimer = 0f;
             }
+            
+            //FoodEffects();
         }
         
         private void ApplyNaturalDecay()

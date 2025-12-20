@@ -350,7 +350,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1250172489}
   - component: {fileID: 1250172488}
-  - component: {fileID: 1250172490}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -370,20 +369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63144155fdd47808ae3b7f0e645d977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.GameEndPanel
-  canvasGroup: {fileID: 0}
-  fadeDuration: 0.3
-  isVisible: 0
-  endingTitleText: {fileID: 0}
-  endingIllustration: {fileID: 0}
-  endingStoryText: {fileID: 0}
-  statsContainer: {fileID: 0}
-  totalDaysText: {fileID: 0}
-  tasksCompletedText: {fileID: 0}
-  finalHealthText: {fileID: 0}
-  finalMoodText: {fileID: 0}
-  restartButton: {fileID: 0}
-  mainMenuButton: {fileID: 0}
-  quitButton: {fileID: 0}
 --- !u!4 &1250172489
 Transform:
   m_ObjectHideFlags: 0
@@ -399,31 +384,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1250172490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1250172487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50c1b4e1fe7d404a9f7cb1867fc61892, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Core.DailyStatusData
-  id: 
-  title: 
-  subTitle: 
-  storyText: 
-  trendText: 
-  missionGoal: 
-  targetValue: 0
-  rewards:
-  - type: 1
-    value: 0
-  penalties:
-  - type: 2
-    value: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
