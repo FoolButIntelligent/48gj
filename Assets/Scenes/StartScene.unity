@@ -898,6 +898,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 8837383625441851445, guid: 3eee588d8dcaaf948b7c65b5cef38953, type: 3}
+      propertyPath: endings.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837383625441851445, guid: 3eee588d8dcaaf948b7c65b5cef38953, type: 3}
+      propertyPath: endings.Array.data[0].content
+      value: "\u6700\u8FD1\u65E5\u5B50\u8FC7\u5F97\u5F88\u6E05\u6DE1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837383625441851445, guid: 3eee588d8dcaaf948b7c65b5cef38953, type: 3}
+      propertyPath: endings.Array.data[1].content
+      value: "katuria\u4ECE\u6765\u4E0D\u59D4\u5C48\u81EA\u5DF1\u7684\u80C3"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837383625441851445, guid: 3eee588d8dcaaf948b7c65b5cef38953, type: 3}
+      propertyPath: endings.Array.data[2].content
+      value: "\u4EC0\u4E48\u90FD\u5403\u53EA\u4F1A\u8BA9\u6211\u8425\u517B\u5747\u8861"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837383625441851445, guid: 3eee588d8dcaaf948b7c65b5cef38953, type: 3}
+      propertyPath: endings.Array.data[0].endTitle
+      value: "\u96BE\u9053\u6211\u771F\u7684\u662F\u517B\u751F\u201C\u7816\u201D\u5BB6\uFF1F"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837383625441851445, guid: 3eee588d8dcaaf948b7c65b5cef38953, type: 3}
+      propertyPath: endings.Array.data[1].endTitle
+      value: "\u5927\u536B\u6234"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837383625441851445, guid: 3eee588d8dcaaf948b7c65b5cef38953, type: 3}
+      propertyPath: endings.Array.data[2].endTitle
+      value: "\u4EC0\u4E48\u90FD\u5403\u53EA\u4F1A\u8BA9\u6211\u8425\u517B\u5747\u8861"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

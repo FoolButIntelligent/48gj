@@ -77,17 +77,6 @@ public class ItemManager : MonoBehaviour
                 Debug.LogWarning($"无法解析行数据: {lines[i]}，应该包含两个字段（食物名称和属性数据）。");
             }
         }
-
-        // 打印加载的数据
-        Debug.Log("Food Data Loaded:");
-        foreach (FoodData food in foods)
-        {
-            Debug.Log($"Food Name: {food.foodName}");
-            foreach (var effect in food.effects)
-            {
-                Debug.Log($"Effect - {effect.type}: {effect.value}");
-            }
-        }
     }
     else
     {
@@ -97,85 +86,110 @@ public class ItemManager : MonoBehaviour
 
 
 
-    // 读取 Mission 数据
-    public void LoadMissionData()
+   public void LoadMissionData() 
+   {
+    if (File.Exists(MissionFilePath))
     {
-        if (File.Exists(MissionFilePath))
+        string[] lines = File.ReadAllLines(MissionFilePath);
+
+        for (int i = 1; i < lines.Length; i++) // 跳过标题行
         {
-            string[] lines = File.ReadAllLines(MissionFilePath);
-            for (int i = 1; i < lines.Length; i++) // Skip header line
+            string[] columns = lines[i].Split(',');
+
+            if (columns.Length >= 9) // 确保每行有足够的列
             {
-                string[] columns = lines[i].Split(';');
                 MissionData newMission = new MissionData
                 {
-                    id = columns[0],
-                    title = columns[1],
-                    subTitle = columns[2],
-                    storyText = columns[3],
-                    trendText = columns[4],
-                    missionGoal = columns[5],
-                    missionGoalData = new List<StatModifier>(),  // Add logic to parse goal data if needed
-                    rewards = new List<StatModifier>(),
-                    penalties = new List<StatModifier>()
+                    id = columns[0].Trim(),  // 获取ID
+                    title = columns[1].Trim(),  // 获取标题
+                    subTitle = columns[2].Trim(),  // 获取副标题
+                    storyText = columns[3].Trim(),  // 获取故事文本
+                    trendText = columns[4].Trim(),  // 获取趋势文本
+                    missionGoal = columns[5].Trim(),  // 获取任务目标
+                    missionGoalData = new List<StatModifier>(), // 任务目标数据
+                    rewards = new List<StatModifier>(),  // 奖励数据
+                    penalties = new List<StatModifier>()  // 惩罚数据
                 };
 
-                // Parse rewards and penalties
-                string[] rewardList = columns[7].Split(',');
-                foreach (string reward in rewardList)
+                // 解析 rewards
+                string[] rewardList = columns[7].Split(':');
+                if (rewardList.Length > 1)
                 {
-                    string[] rewardDetails = reward.Split(':');
-                    StatModifier rewardStat = new StatModifier
+                    string[] rewardDetails = rewardList[1].Split(',');
+                    foreach (string reward in rewardDetails)
                     {
-                        type = (StatType)System.Enum.Parse(typeof(StatType), rewardDetails[0]),
-                        value = float.Parse(rewardDetails[1])
-                    };
-                    newMission.rewards.Add(rewardStat);
+                        string[] rewardParts = reward.Split(':');
+                        if (rewardParts.Length == 2)
+                        {
+                            StatModifier rewardStat = new StatModifier
+                            {
+                                type = (StatType)Enum.Parse(typeof(StatType), rewardParts[0].Trim(), true),
+                                value = float.Parse(rewardParts[1].Trim())
+                            };
+                            newMission.rewards.Add(rewardStat);
+                        }
+                    }
                 }
 
-                string[] penaltyList = columns[8].Split(',');
-                foreach (string penalty in penaltyList)
+                // 解析 penalties
+                string[] penaltyList = columns[8].Split(':');
+                if (penaltyList.Length > 1)
                 {
-                    string[] penaltyDetails = penalty.Split(':');
-                    StatModifier penaltyStat = new StatModifier
+                    string[] penaltyDetails = penaltyList[1].Split(',');
+                    foreach (string penalty in penaltyDetails)
                     {
-                        type = (StatType)System.Enum.Parse(typeof(StatType), penaltyDetails[0]),
-                        value = float.Parse(penaltyDetails[1])
-                    };
-                    newMission.penalties.Add(penaltyStat);
+                        string[] penaltyParts = penalty.Split(':');
+                        if (penaltyParts.Length == 2)
+                        {
+                            StatModifier penaltyStat = new StatModifier
+                            {
+                                type = (StatType)Enum.Parse(typeof(StatType), penaltyParts[0].Trim(), true),
+                                value = float.Parse(penaltyParts[1].Trim())
+                            };
+                            newMission.penalties.Add(penaltyStat);
+                        }
+                    }
                 }
 
+                // 将新的 MissionData 添加到 missions 列表
                 missions.Add(newMission);
             }
-        }
-        else
-        {
-            Debug.LogError("Mission data file not found at path: " + MissionFilePath);
-        }
-    }
-
-    // 读取 Ending 数据
-    public void LoadEndingData()
-    {
-        if (File.Exists(EndingFilePath))
-        {
-            string[] lines = File.ReadAllLines(EndingFilePath);
-            for (int i = 1; i < lines.Length; i++) // Skip header line
+            else
             {
-                string[] columns = lines[i].Split(';');
-                EndingData newEnding = new EndingData
-                {
-                    endTitle = columns[0],
-                    content = columns[1]
-                };
-
-                endings.Add(newEnding);
+                Debug.LogWarning($"数据格式错误: {lines[i]}，请确保每行数据格式正确。");
             }
         }
-        else
-        {
-            Debug.LogError("Ending data file not found at path: " + EndingFilePath);
-        }
     }
+    else
+    {
+        Debug.LogError("Mission data file not found at path: " + MissionFilePath);
+    }
+    }
+
+
+    // 读取 Ending 数据
+    // public void LoadEndingData()
+    // {
+    //     if (File.Exists(EndingFilePath))
+    //     {
+    //         string[] lines = File.ReadAllLines(EndingFilePath);
+    //         for (int i = 1; i < lines.Length; i++) // Skip header line
+    //         {
+    //             string[] columns = lines[i].Split(';');
+    //             EndingData newEnding = new EndingData
+    //             {
+    //                 endTitle = columns[0],
+    //                 content = columns[1]
+    //             };
+    //
+    //             endings.Add(newEnding);
+    //         }
+    //     }
+    //     else
+    //     {
+    //         Debug.LogError("Ending data file not found at path: " + EndingFilePath);
+    //     }
+    // }
 
     // 专门打印加载的数据
     public void PrintLoadedData()
@@ -209,12 +223,12 @@ public class ItemManager : MonoBehaviour
             }
         }
 
-        // 打印 EndingData 数据
-        Debug.Log("Ending Data Loaded:");
-        foreach (EndingData ending in endings)
-        {
-            Debug.Log($"Ending Title: {ending.endTitle}, Content: {ending.content}");
-        }
+        // // 打印 EndingData 数据
+        // Debug.Log("Ending Data Loaded:");
+        // foreach (EndingData ending in endings)
+        // {
+        //     Debug.Log($"Ending Title: {ending.endTitle}, Content: {ending.content}");
+        // }
     }
 
     // Start method to load all data at once and print it
@@ -222,7 +236,7 @@ public class ItemManager : MonoBehaviour
     {
         LoadFoodData();
         LoadMissionData();
-        LoadEndingData();
+        //LoadEndingData();
         PrintLoadedData();  // 打印所有加载的数据
     }
 }

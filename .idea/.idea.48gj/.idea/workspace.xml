@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bb45d3b9-c1b0-438e-ba93-ad10d70e0fc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.48gj/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.48gj/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Missions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Missions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pref/Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pref/Manager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Missions.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Missions.csv.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/StateCardData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/StateCardData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ItemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ItemManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/StateManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -26,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/ItemManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -115,6 +115,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
