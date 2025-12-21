@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using System;
+using Core;
 using UnityEngine;
 
 namespace Manager
@@ -21,7 +22,11 @@ namespace Manager
                 Destroy(gameObject);
             }
         }
-        
+
+        private void Start()
+        {
+        }
+
         [Header("实时数值0-100")]
         public float health = 70f;   // 初始值 70
         public float mood = 50f;     // 初始值 50
