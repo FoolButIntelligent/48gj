@@ -3,13 +3,23 @@ using UnityEngine;
 
 namespace Manager
 {
-    public class StateManager 
+    public class StateManager :MonoBehaviour
     {
         //单例
         public static StateManager Instance;
-        void Awake()
+        
+        private void Awake()
         {
-            Instance = this;
+            // 确保管理类在切换场景时不被销毁
+            if (Instance == null)
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
         
         [Header("实时数值0-100")]

@@ -8,6 +8,8 @@ namespace UI
         [Header("UI 面板引用")]
         public GameObject pausePanel;       // 暂停页面
         public GameObject dailyStatusPanel; // 今日状态/任务卡片页面
+        [Header("UI 组件引用")] 
+        public GameObject Panel;
 
         private bool isPaused = false;
 
@@ -49,9 +51,21 @@ namespace UI
         {
             dailyStatusPanel.SetActive(true);
             Time.timeScale = 0f; 
+            AudioManager.Instance.bgmSource.volume = 0.1f;
             // 播放弹出音效
             if(AudioManager.Instance != null) 
                 AudioManager.Instance.PlaySFX(AudioManager.Instance.popupOpen);
+        }
+        
+        // 隐藏今日状态 (关闭时通常也要恢复游戏)
+        public void HideDailyStatus()
+        {
+            dailyStatusPanel.SetActive(false);
+            Time.timeScale = 1f; 
+            AudioManager.Instance.bgmSource.volume = 1f;
+            // 播放关闭音效
+            if(AudioManager.Instance != null) 
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.popupClose);
         }
     }
 }
